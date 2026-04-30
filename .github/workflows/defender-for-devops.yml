@@ -40,6 +40,8 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v6
+        with:
+          path: b
       - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: |
